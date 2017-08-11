@@ -2,6 +2,9 @@
  * Practice 009.2_Integer set
  * Date 20170811
  */
+
+import java.util.Scanner;
+
 public class TestIntegerSet {
 
 	public static void main(String[] args) {
@@ -16,14 +19,18 @@ class IntegerSet {
 	private int count;		//Count of numbers in array.
 
 	//Constructor
-	public IntegerSet () {}
+	public IntegerSet () {
+		element = new int[10];
+		count = 0;
+	}
 	
 	//Constructor which assign maximum size.
 	public IntegerSet (int size) {
-		
+		element = new int[size];
+		count = 0;
 	}		
 	
-	//Insert new element value to array which cannot be duplicate.
+	//Insert new element value to array which cannot be duplicated to elements in array.
 	public void Insert(int value) {
 		
 	}	
@@ -39,7 +46,7 @@ class IntegerSet {
 	}
 	
 	//Search whether value is in the set. Return index if yes and return -1 if it's not in the set.
-	public int seach(int value) {
+	public int search(int value) {
 		return -1;
 	}
 	
